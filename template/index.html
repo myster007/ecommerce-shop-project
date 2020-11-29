@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Puzzle Escape Room</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">&#9776</button>
+                <a href="index.html">Mates</a>
+            </div>
+            <div class="headers-link">
+                <a href="cart.html"> Cart</a>
+                <a href="signin.html">Signin </a>
+
+            </div>
+        </header>
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+            <ul>
+                <li>
+                    <a href="index.html">Category 1</a>
+                </li>
+                <li>
+                    <a href="index.html">Category 2</a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+                    <li>
+                        <div class="product">
+                            <img classs="product-image" src="images/1.jpg" alt="product">
+                            <div class="product-name">
+                                <a href="product.html"> Cube </a>
+                            </div>
+                            <div class="product-brand">BYME</div>
+                            <div class="price">100zł</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img classs="product-image" src="images/1.jpg" alt="product">
+                            <div class="product-name">
+                                <a href="product.html"> Cube </a>
+                            </div>
+                            <div class="product-brand">BYME</div>
+                            <div class="price">100zł</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img classs="product-image" src="images/1.jpg" alt="product">
+                            <div class="product-name">
+                                <a href="product.html"> Cube </a>
+                            </div>
+                            <div class="product-brand">BYME</div>
+                            <div class="price">100zł</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </main>
+        <footer class="footer">
+            Copyright by me 20202 &nbsp;
+        </footer>
+    </div>
+    <script>
+        function openMenu() {
+            document.querySelector(".sidebar").classList.add("open")
+        }
+        function closeMenu() {
+            document.querySelector(".sidebar").classList.remove("open")
+        }
+    </script>
+</body>
+
+</html>
